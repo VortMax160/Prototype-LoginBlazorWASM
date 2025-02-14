@@ -1,0 +1,63 @@
+﻿@page "/"
+@using System.Diagnostics
+@using AuthRoleApp.Shared
+@using LoginBlazorWASM.Client.Layout
+@using LoginBlazorWASM.Shared.src
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@layout GuessLayout
+@rendermode InteractiveWebAssembly
+
+<main>
+    <h3 class="text-center">Acceder</h3>
+
+    <EditForm Model="usuario" OnValidSubmit="IniciarSesion">
+        <DataAnnotationsValidator />
+        <div class="mb-3">
+            <label for="userNameInput" class="form-label">UserName</label>
+            <InputText type="text" class="form-control" id="emailInput" @bind-value="usuario.user_name" />
+            <ValidationMessage For="(() => usuario.user_name)" />
+        </div>
+        <div class="mb-3">
+            <label for="passwordInput" class="form-label">Contraseña</label>
+            <InputText type="password" class="form-control" id="passwordInput" @bind-value="usuario.password" />
+            <ValidationMessage For="(() => usuario.password)" />
+        </div>
+        <div class="button-container">
+            <button type="submit" class="btn btn-success btn-center">Ingresar</button>
+            <button type="button" class="btn btn-success btn-center" @onclick="CambiarContraseña">Cambiar Contraseña</button>
+        </div>
+    </EditForm>
+
+    <div class="top-row">
+        <button class="btn btn-secondary" @onclick="IrRegistrase">Registrarse</button>
+    </div>
+</main>
+
+@code {
+    UsuarioDTO usuario = new UsuarioDTO();
+
+    void IrRegistrase()
+    {
+        NavigationManager.NavigateTo("form-register");
+    }
+
+    void CambiarContraseña()
+    {
+        NavigationManager.NavigateTo("form-new-password");
+    }
+
+    async Task IniciarSesion()
+    {
+        var result = await Http.PostAsJsonAsync("api/usuarios/login", usuario);
+        if (result.IsSuccessStatusCode)
+        {   
+            NavigationManager.NavigateTo("home");
+        }
+        else
+        {
+            var errorMessage = await result.Content.ReadAsStringAsync();
+            Console.WriteLine($"Error al iniciar sesión: {errorMessage}");
+        }
+    }
+}

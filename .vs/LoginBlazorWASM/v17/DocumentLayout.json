@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\facu\\C#\\LoginBlazorWASM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7787C86-9087-4964-B018-E153813B97BE}|LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj|d:\\facu\\c#\\loginblazorwasm\\loginblazorwasm\\loginblazorwasm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7787C86-9087-4964-B018-E153813B97BE}|LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj|solutionrelative:loginblazorwasm\\loginblazorwasm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|d:\\facu\\c#\\loginblazorwasm\\loginblazorwasm\\loginblazorwasm.client\\pages\\formregister.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|solutionrelative:loginblazorwasm\\loginblazorwasm.client\\pages\\formregister.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|d:\\facu\\c#\\loginblazorwasm\\loginblazorwasm\\loginblazorwasm.client\\pages\\formnewpassword.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|solutionrelative:loginblazorwasm\\loginblazorwasm.client\\pages\\formnewpassword.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7787C86-9087-4964-B018-E153813B97BE}|LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj|d:\\facu\\c#\\loginblazorwasm\\loginblazorwasm\\loginblazorwasm\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7787C86-9087-4964-B018-E153813B97BE}|LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj|solutionrelative:loginblazorwasm\\loginblazorwasm\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|d:\\facu\\c#\\loginblazorwasm\\loginblazorwasm\\loginblazorwasm.client\\pages\\formlogin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|solutionrelative:loginblazorwasm\\loginblazorwasm.client\\pages\\formlogin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|d:\\facu\\c#\\loginblazorwasm\\loginblazorwasm\\loginblazorwasm.client\\pages\\formregister.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|solutionrelative:loginblazorwasm\\loginblazorwasm.client\\pages\\formregister.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|d:\\facu\\c#\\loginblazorwasm\\loginblazorwasm\\loginblazorwasm.client\\pages\\formnewpassword.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|solutionrelative:loginblazorwasm\\loginblazorwasm.client\\pages\\formnewpassword.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|d:\\facu\\c#\\loginblazorwasm\\loginblazorwasm\\loginblazorwasm.client\\layout\\guesslayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F0056184-3EA3-459B-893E-446212213905}|LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj|solutionrelative:loginblazorwasm\\loginblazorwasm.client\\layout\\guesslayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{056F33FD-D9F5-443A-8C1F-DA9FB7311FCE}|LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj|d:\\facu\\c#\\loginblazorwasm\\loginblazorwasm.shared\\src\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{056F33FD-D9F5-443A-8C1F-DA9FB7311FCE}|LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj|solutionrelative:loginblazorwasm.shared\\src\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\appsettings.json",
+              "RelativeDocumentMoniker": "LoginBlazorWASM\\LoginBlazorWASM\\appsettings.json",
+              "ToolTip": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\appsettings.json",
+              "RelativeToolTip": "LoginBlazorWASM\\LoginBlazorWASM\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-14T01:14:56.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GuessLayout.razor.css",
+              "DocumentMoniker": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Layout\\GuessLayout.razor.css",
+              "RelativeDocumentMoniker": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Layout\\GuessLayout.razor.css",
+              "ToolTip": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Layout\\GuessLayout.razor.css",
+              "RelativeToolTip": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Layout\\GuessLayout.razor.css",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-14T01:04:07.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormRegister.razor.css",
+              "DocumentMoniker": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormRegister.razor.css",
+              "RelativeDocumentMoniker": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormRegister.razor.css",
+              "ToolTip": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormRegister.razor.css",
+              "RelativeToolTip": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormRegister.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-14T00:48:29.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormRegister.razor",
+              "DocumentMoniker": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormRegister.razor",
+              "RelativeDocumentMoniker": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormRegister.razor",
+              "ToolTip": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormRegister.razor",
+              "RelativeToolTip": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormRegister.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwB8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T00:46:18.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormNewPassword.razor.css",
+              "DocumentMoniker": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormNewPassword.razor.css",
+              "RelativeDocumentMoniker": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormNewPassword.razor.css",
+              "ToolTip": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormNewPassword.razor.css",
+              "RelativeToolTip": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormNewPassword.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-14T00:42:55.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\src\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "LoginBlazorWASM.Shared\\src\\UsuarioDTO.cs",
+              "ToolTip": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\src\\UsuarioDTO.cs",
+              "RelativeToolTip": "LoginBlazorWASM.Shared\\src\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T23:56:13.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormLogin.razor",
+              "DocumentMoniker": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormLogin.razor",
+              "RelativeDocumentMoniker": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormLogin.razor",
+              "ToolTip": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormLogin.razor",
+              "RelativeToolTip": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormLogin.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T23:44:28.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "LoginBlazorWASM\\LoginBlazorWASM\\Controllers\\UsuariosController.cs",
+              "ToolTip": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "LoginBlazorWASM\\LoginBlazorWASM\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwHUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T23:26:54.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormNewPassword.razor",
+              "DocumentMoniker": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormNewPassword.razor",
+              "RelativeDocumentMoniker": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormNewPassword.razor",
+              "ToolTip": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormNewPassword.razor",
+              "RelativeToolTip": "LoginBlazorWASM\\LoginBlazorWASM.Client\\Pages\\FormNewPassword.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T23:26:19.573Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

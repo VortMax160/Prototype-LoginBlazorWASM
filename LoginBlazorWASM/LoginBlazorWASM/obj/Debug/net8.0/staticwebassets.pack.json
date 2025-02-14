@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LoginBlazorWASM.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LoginBlazorWASM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LoginBlazorWASM.props",
+      "PackagePath": "build\\LoginBlazorWASM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LoginBlazorWASM.props",
+      "PackagePath": "buildMultiTargeting\\LoginBlazorWASM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LoginBlazorWASM.props",
+      "PackagePath": "buildTransitive\\LoginBlazorWASM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
