@@ -1,19 +1,19 @@
 {
   "Files": [
     {
-      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LoginBlazorWASM.Client.bundle.scp.css",
+      "Id": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LoginBlazorWASM.Client.bundle.scp.css",
       "PackagePath": "staticwebassets\\LoginBlazorWASM.Client.hucpnftq7v.bundle.scp.css"
     },
     {
-      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\wwwroot\\appsettings.Development.json",
+      "Id": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\wwwroot\\appsettings.Development.json",
       "PackagePath": "staticwebassets\\appsettings.Development.json"
     },
     {
-      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\wwwroot\\appsettings.json",
+      "Id": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\wwwroot\\appsettings.json",
       "PackagePath": "staticwebassets\\appsettings.json"
     },
     {

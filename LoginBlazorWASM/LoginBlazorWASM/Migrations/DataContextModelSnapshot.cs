@@ -25,33 +25,37 @@ namespace LoginBlazorWASM.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Password")
-                        .HasColumnType("text");
+                    b.Property<byte[]>("PasswordHash")
+                        .HasColumnType("bytea")
+                        .HasColumnName("password_hash");
+
+                    b.Property<byte[]>("PasswordSalt")
+                        .HasColumnType("bytea")
+                        .HasColumnName("password_salt");
+
+                    b.Property<string>("Rol")
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)")
+                        .HasColumnName("rol");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("character varying")
+                        .HasColumnName("token");
 
                     b.Property<string>("UserName")
-                        .HasColumnType("text");
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)")
+                        .HasColumnName("userName");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("usuarios_pkey");
 
-                    b.ToTable("Usuarios");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Password = "root",
-                            UserName = "root"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Password = "root2",
-                            UserName = "root2"
-                        });
+                    b.ToTable("usuarios", (string)null);
                 });
 #pragma warning restore 612, 618
         }

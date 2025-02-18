@@ -1,10 +1,14 @@
 ﻿@page "/"
 @using System.Diagnostics
-@using AuthRoleApp.Shared
+@using Microsoft.AspNetCore.Components.Authorization
 @using LoginBlazorWASM.Client.Layout
 @using LoginBlazorWASM.Shared.src
+
+@inject IJSRuntime JS
+@inject AuthenticationStateProvider AuthStateProv
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+
 @layout GuessLayout
 @rendermode InteractiveWebAssembly
 
@@ -36,6 +40,7 @@
 
 @code {
     UsuarioDTO usuario = new UsuarioDTO();
+    string token = null;
 
     void IrRegistrase()
     {
@@ -51,7 +56,10 @@
     {
         var result = await Http.PostAsJsonAsync("api/usuarios/login", usuario);
         if (result.IsSuccessStatusCode)
-        {   
+        {
+            token = await result.Content.ReadAsStringAsync();
+            await JS.InvokeAsync<object>("localStorage.setItem", "Token", token);
+            await AuthStateProv.GetAuthenticationStateAsync();
             NavigationManager.NavigateTo("home");
         }
         else

@@ -29,13 +29,33 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "AuthRoleApp.Shared.UsuarioDTO",
+        "Type": "LoginBlazorWASM.Shared.src.UsuarioDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LoginBlazorWASM.Shared.src.Usuario",
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LoginBlazorWASM.Controllers.UsuariosController",
+    "Method": "GetCuenta",
+    "RelativePath": "api/Usuarios/GetDatos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[LoginBlazorWASM.Shared.src.Usuario, LoginBlazorWASM.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -54,14 +74,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "AuthRoleApp.Shared.UsuarioDTO",
+        "Name": "obj",
+        "Type": "LoginBlazorWASM.Shared.src.UsuarioDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Boolean",
+        "Type": "System.String",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -81,7 +101,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "AuthRoleApp.Shared.UsuarioDTO",
+        "Type": "LoginBlazorWASM.Shared.src.UsuarioDTO",
         "IsRequired": true
       }
     ],

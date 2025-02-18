@@ -1,5 +1,17 @@
 ﻿@page "/home"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
+
+@inject AuthenticationStateProvider auth
+@inject NavigationManager NavigationManager
 
 <PageTitle>Home</PageTitle>
 
-
+@code{
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await auth.GetAuthenticationStateAsync();
+        var user = authState.User;
+    }
+}

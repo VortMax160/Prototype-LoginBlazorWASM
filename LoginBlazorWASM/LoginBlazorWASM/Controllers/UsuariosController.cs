@@ -1,59 +1,44 @@
-﻿using AuthRoleApp.Shared;
-using LoginBlazorWASM.Data;
+﻿using LoginBlazorWASM.Data;
 using LoginBlazorWASM.Shared.src;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using LoginBlazorWASM.Services;
+
 
 namespace LoginBlazorWASM.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsuariosController : ControllerBase
     {
         private readonly DataContext _context;
+        private AuthService _authService;
 
-        public UsuariosController(DataContext context)
+        public UsuariosController(DataContext context, AuthService authService)
         {
             _context = context;
+            _authService = authService;
         }
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<List<Usuario>>> GetAllUsers()
         {
             return await _context.Usuarios.ToListAsync();
         }
-
-        /*[HttpPut ("CambiarPassword")]
-        public async Task <ActionResult<Usuario>> CambiarContrasenia(UsuarioDTO user)
+        
+        [HttpGet("GetDatos")]
+        public async Task<ActionResult<List<Usuario>>> GetCuenta()
         {
-            var cuenta = await _context.Usuarios.Where(x => x.UserName == user.user_name).FirstOrDefaultAsync();
-            bool valido = false;
-            if (cuenta != null)
-            {
-                if(cuenta.Password == user.password) 
-                {
-                    valido = true;
-                    cuenta.Password = user.new_password;
-                }
-            }
-            else
-            {
-                return BadRequest("Usuario no encontrado");
-            }
-               
-            if (!valido)
-            {
-                return BadRequest("La vieja contraseña ingresada no coincide");
-            }
-            else
-            {
-                return Ok(cuenta);
-            }
+            var lista = await _context.Usuarios.ToListAsync();
+            return Ok(lista);
+        }
 
-            
-        }*/
         [HttpPut("Cambiar")]
-        public async Task<ActionResult<Usuario>> CambiarContrasenia(UsuarioDTO user)
+        [AllowAnonymous]
+        public async Task<ActionResult<string>> CambiarContrasenia(UsuarioDTO user)
         {
             // Validar entrada
             if (string.IsNullOrEmpty(user.user_name) || string.IsNullOrEmpty(user.password) || string.IsNullOrEmpty(user.new_password))
@@ -72,40 +57,43 @@ namespace LoginBlazorWASM.Controllers
             }
 
             // Verificar que la contraseña actual coincida
-            if (cuenta.Password != user.password)
+            if (_authService.VerifyPasswordHash(user.password,cuenta.PasswordHash,cuenta.PasswordSalt))
             {
                 return BadRequest("La contraseña actual no coincide.");
             }
 
             // Actualizar la contraseña
-            cuenta.Password = user.new_password;
+            _authService.CreatePasswordHash(user.new_password, out byte[] passwordHash, out byte[] passwordSalt);
+            cuenta.PasswordHash = passwordHash;
+            cuenta.PasswordSalt= passwordSalt;
 
             // Guardar cambios en la base de datos
             await _context.SaveChangesAsync();
 
-            return Ok(cuenta);
+            return Ok("Se cambio la contraseña correctamente");
         }
 
         [HttpPost("Login")]
-        public async Task <ActionResult<bool>> IniciarSesion(UsuarioDTO user)
+        [AllowAnonymous]
+        public async Task <ActionResult<string>> IniciarSesion(UsuarioDTO obj)
         {
-            var cuenta = await _context.Usuarios.Where(x => x.UserName == user.user_name).FirstOrDefaultAsync();
-            bool valido = false;
+            var cuenta = await _context.Usuarios.Where(x => x.UserName == obj.user_name).FirstOrDefaultAsync();
+            bool valido = _authService.VerifyPasswordHash(obj.password, cuenta.PasswordHash, cuenta.PasswordSalt);
 
-            if (cuenta != null) 
-                valido = (user.password == cuenta.Password);
-                
             if (cuenta == null || !valido)
             {
                 return BadRequest("Usuario y/o contraseña incorrectos");
             }
 
-            return Ok(valido);
+            string token = _authService.CreateToken(cuenta);
+            return Ok(token);
         }
 
         [HttpPost("Registrar")]
+        [AllowAnonymous]
         public async Task <ActionResult<string>> CreateCuenta(UsuarioDTO user)
         {
+           
             var cuenta = await _context.Usuarios.Where(x => x.UserName == user.user_name).FirstOrDefaultAsync();
             if (cuenta != null)
             {
@@ -114,9 +102,12 @@ namespace LoginBlazorWASM.Controllers
             else
             {
                 var usuario = new Usuario();
-                usuario.UserName = user.user_name;
-                usuario.Password = user.password;
 
+                _authService.CreatePasswordHash(user.password, out byte[] passwordHash, out byte[] passwordSalt);
+                usuario.UserName = user.user_name;
+                usuario.PasswordHash = passwordHash;
+                usuario.PasswordSalt = passwordSalt;
+                usuario.Rol = "Usuario";
                 _context.Usuarios.Add(usuario);
                 await _context.SaveChangesAsync();
 
@@ -125,3 +116,4 @@ namespace LoginBlazorWASM.Controllers
         }
     }
 }
+

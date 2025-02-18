@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj": {}
+    "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj": {}
   },
   "projects": {
-    "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj": {
+    "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj",
+        "projectUniqueName": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj",
         "projectName": "LoginBlazorWASM.Shared",
-        "projectPath": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj",
+        "projectPath": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\obj\\",
+        "outputPath": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,6 +1,6 @@
 ﻿@page "/form-register"
-@using AuthRoleApp.Shared
 @using LoginBlazorWASM.Client.Layout
+@using LoginBlazorWASM.Shared.src
 @layout GuessLayout
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
@@ -8,43 +8,34 @@
 
 <h3 class="text-center">Formulario de Registro</h3>
 
-<EditForm Model="usuario" OnValidSubmit="Registrarse">
+<EditForm Model="nuevoUsuario" OnValidSubmit="Registrar">
     <DataAnnotationsValidator />
     <div class="mb-3">
         <label for="userNameInput" class="form-label">UserName</label>
-        <InputText type="text" class="form-control" id="emailInput" @bind-value="usuario.user_name" />
-        <ValidationMessage For="(() => usuario.user_name)" />
+        <InputText type="text" class="form-control" id="emailInput" @bind-value="nuevoUsuario.user_name" />
+        <ValidationMessage For="(() => nuevoUsuario.user_name)" />
     </div>
     <div class="mb-3">
         <label for="passwordInput" class="form-label">Contraseña</label>
-        <InputText type="password" class="form-control" id="passwordInput" @bind-value="usuario.password" />
-        <ValidationMessage For="(() => usuario.password)" />
+        <InputText type="password" class="form-control" id="passwordInput" @bind-value="nuevoUsuario.password" />
+        <ValidationMessage For="(() => nuevoUsuario.password)" />
     </div>
     <div class="button-container">
         <button type="submit" class="btn btn-success btn-center">Ingresar</button>
         <button type="button" class="btn btn-success btn-center" @onclick="Volver">Volver al Login</button>
     </div>
 </EditForm>
-
+<p>@Respuesta</p>
 @code {
-    UsuarioDTO usuario = new UsuarioDTO();
-
+    UsuarioDTO nuevoUsuario = new UsuarioDTO();
+    string Respuesta = "Procesando...";
     void Volver(){
         NavigationManager.NavigateTo("");
     }
 
-    async Task Registrarse()
+    async Task Registrar()
     {
-        var result = await Http.PostAsJsonAsync("api/usuarios/registrar", usuario);
-        if (result.IsSuccessStatusCode)
-        {
-            await Task.Delay(5000);
-            NavigationManager.NavigateTo("");
-        }
-        else
-        {
-            var errorMessage = await result.Content.ReadAsStringAsync();
-            Console.WriteLine($"Error al registrarse: {errorMessage}");
-        }
+        var resultado = await Http.PostAsJsonAsync("api/usuarios/registrar", nuevoUsuario);
+        Respuesta = await resultado.Content.ReadAsStringAsync();
     }
 }

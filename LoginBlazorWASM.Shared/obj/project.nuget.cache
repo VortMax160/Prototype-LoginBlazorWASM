@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cw7KffqFSgg=",
+  "dgSpecHash": "aeKZQIW2j+c=",
   "success": true,
-  "projectFilePath": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj",
+  "projectFilePath": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

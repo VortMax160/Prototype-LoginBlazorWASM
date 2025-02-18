@@ -1,8 +1,14 @@
 using LoginBlazorWASM.Client.Pages;
 using LoginBlazorWASM.Components;
 using LoginBlazorWASM.Data;
+using LoginBlazorWASM.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Server;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Npgsql.EntityFrameworkCore;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,13 +16,32 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 
+builder.Services.AddAuthenticationCore();
+builder.Services.AddScoped<AuthenticationStateProvider, ServerAuthenticationStateProvider>();
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
-builder.Services.AddDbContext<DataContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddCascadingAuthenticationState();
+builder.Services.AddTransient<AuthService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        var signingToken = builder.Configuration.GetSection("JWT")["Key"];
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingToken)),
+            ValidateAudience = false,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = false
+        };
+    });
+
+builder.Services.AddDbContext<DataContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
@@ -34,10 +59,11 @@ else
 
 app.UseHttpsRedirection();
 
-app.MapControllers();
-
 app.UseStaticFiles();
 app.UseAntiforgery();
+app.MapControllers();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
