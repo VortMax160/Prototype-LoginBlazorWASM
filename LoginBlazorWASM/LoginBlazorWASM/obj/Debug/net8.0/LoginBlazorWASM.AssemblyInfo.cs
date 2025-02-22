@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginBlazorWASM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+260e43e397cd89b1605b1eb8ab544e309eab5a78")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginBlazorWASM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginBlazorWASM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

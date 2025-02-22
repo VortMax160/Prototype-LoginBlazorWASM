@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a3fWl+j7Tys=",
+  "dgSpecHash": "36Z9C+U49xI=",
   "success": true,
-  "projectFilePath": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj",
+  "projectFilePath": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.13\\microsoft.aspnetcore.authentication.jwtbearer.8.0.13.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.12\\microsoft.aspnetcore.authorization.8.0.12.nupkg.sha512",

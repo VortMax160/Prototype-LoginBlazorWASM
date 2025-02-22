@@ -4,7 +4,6 @@
 @layout GuessLayout
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
-@rendermode InteractiveWebAssembly
 
 <h3 class="text-center">Formulario de Registro</h3>
 
@@ -26,6 +25,7 @@
     </div>
 </EditForm>
 <p>@Respuesta</p>
+
 @code {
     UsuarioDTO nuevoUsuario = new UsuarioDTO();
     string Respuesta = "Procesando...";

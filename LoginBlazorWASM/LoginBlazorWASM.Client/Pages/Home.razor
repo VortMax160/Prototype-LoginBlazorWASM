@@ -8,6 +8,16 @@
 
 <PageTitle>Home</PageTitle>
 
+
+<AuthorizeView>
+    <Authorized>
+        <h1>Esta autorizado</h1>
+    </Authorized>
+    <NotAuthorized>
+        <h2>No esta autorizado</h2>
+    </NotAuthorized>
+</AuthorizeView>
+
 @code{
     protected override async Task OnInitializedAsync()
     {

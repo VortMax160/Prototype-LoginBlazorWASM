@@ -9,3 +9,14 @@ D:\facu\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\LoginBlazorWASM.
 D:\facu\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\refint\LoginBlazorWASM.Shared.dll
 D:\facu\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\LoginBlazorWASM.Shared.pdb
 D:\facu\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\ref\LoginBlazorWASM.Shared.dll
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\bin\Debug\net8.0\LoginBlazorWASM.Shared.deps.json
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\bin\Debug\net8.0\LoginBlazorWASM.Shared.dll
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\bin\Debug\net8.0\LoginBlazorWASM.Shared.pdb
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\LoginBlazorWASM.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\LoginBlazorWASM.Shared.AssemblyInfoInputs.cache
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\LoginBlazorWASM.Shared.AssemblyInfo.cs
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\LoginBlazorWASM.Shared.csproj.CoreCompileInputs.cache
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\LoginBlazorWASM.Shared.dll
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\refint\LoginBlazorWASM.Shared.dll
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\LoginBlazorWASM.Shared.pdb
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM.Shared\obj\Debug\net8.0\ref\LoginBlazorWASM.Shared.dll

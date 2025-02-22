@@ -1923,11 +1923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj",
+      "projectUniqueName": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj",
       "projectName": "LoginBlazorWASM",
-      "projectPath": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj",
+      "projectPath": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.csproj",
       "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-      "outputPath": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\obj\\",
+      "outputPath": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1948,11 +1948,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj": {
-              "projectPath": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj"
+            "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj": {
+              "projectPath": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM.Shared\\LoginBlazorWASM.Shared.csproj"
             },
-            "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj": {
-              "projectPath": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj"
+            "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj": {
+              "projectPath": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj"
             }
           }
         }

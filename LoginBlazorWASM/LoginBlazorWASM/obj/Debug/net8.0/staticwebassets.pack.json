@@ -1,19 +1,19 @@
 {
   "Files": [
     {
-      "Id": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\app.css",
+      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\favicon.png",
+      "Id": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {

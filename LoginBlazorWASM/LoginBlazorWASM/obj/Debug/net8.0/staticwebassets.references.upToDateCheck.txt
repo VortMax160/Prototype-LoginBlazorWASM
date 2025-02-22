@@ -41,3 +41,4 @@ D:\facu\LoginBlazorWASM\LoginBlazorWASM\LoginBlazorWASM.Client\obj\Debug\net8.0\
 D:\facu\LoginBlazorWASM\LoginBlazorWASM\LoginBlazorWASM.Client\obj\Debug\net8.0\staticwebassets.build.json
 D:\facu\LoginBlazorWASM\LoginBlazorWASM\LoginBlazorWASM.Client\obj\Debug\net8.0\staticwebassets.build.json
 D:\facu\LoginBlazorWASM\LoginBlazorWASM\LoginBlazorWASM.Client\obj\Debug\net8.0\staticwebassets.build.json
+D:\facu\C#\LoginBlazorWASM\LoginBlazorWASM\LoginBlazorWASM.Client\obj\Debug\net8.0\staticwebassets.build.json

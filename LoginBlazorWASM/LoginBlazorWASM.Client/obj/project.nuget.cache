@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SEYQtZ4VWXk=",
+  "dgSpecHash": "crwW5XzPgyo=",
   "success": true,
-  "projectFilePath": "D:\\facu\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj",
+  "projectFilePath": "D:\\facu\\C#\\LoginBlazorWASM\\LoginBlazorWASM\\LoginBlazorWASM.Client\\LoginBlazorWASM.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.12\\microsoft.aspnetcore.authorization.8.0.12.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.12\\microsoft.aspnetcore.components.8.0.12.nupkg.sha512",
